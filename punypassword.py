@@ -6,9 +6,7 @@ def is_pass_puny(password: str) -> bool:
         lines = file.readlines()
         badpasswds = set([line.rstrip() for line in lines])
 
-    if password in badpasswds:
-        return True
-    return False
+    return password in badpasswds
 
 
 if __name__ == "__main__":
