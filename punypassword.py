@@ -1,6 +1,5 @@
 def is_pass_puny(password: str) -> bool:
     '''Checks if a password is vulnerable to being instantly solved by brute force attacks.\n
-    The word list used can be found at:\n
     '''
     with open("NordEasyPass.txt") as file:
         lines = file.readlines()
